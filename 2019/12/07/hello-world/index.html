@@ -166,11 +166,13 @@
     <div class="friends-content">
         <ul>
             
-            <li><a target="_blank" href="https://www.cnblogs.com/Forever-666/">jinzhengyu</a></li>
-            
-            <li><a target="_blank" href="https://www.cnblogs.com/huangchenyan/">huangchenyan</a></li>
-            
             <li><a target="_blank" href="https://hehezhou.github.io/">hehezhou</a></li>
+            
+            <li><a target="_blank" href="https://www.cnblogs.com/Forever-666/">Clovers</a></li>
+            
+            <li><a target="_blank" href="https://www.cnblogs.com/huangchenyan/">Sevendawns</a></li>
+            
+            <li><a target="_blank" href="https://coderoj.gitee.io/">yz6205</a></li>
             
         </ul>
     </div>
@@ -303,6 +305,27 @@
     </p>
 </div>
 
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'd4385c10c8d140216e80',
+            clientSecret: 'be14d34737398cfdac30288962de5937a22d252c',
+            repo: 'wlmayiyang.github.io',
+            owner: 'wlmayiyang',
+            admin: ['wlmayiyang'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
